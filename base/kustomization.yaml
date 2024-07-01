@@ -1,0 +1,9 @@
+resources:
+  - micro1-deployment.yaml
+  - micro1-service.yaml
+  - micro2-deployment.yaml
+  - micro2-service.yaml
+  - micro3-deployment.yaml
+  - micro3-service.yaml
+  - micro4-deployment.yaml
+  - micro4-service.yaml

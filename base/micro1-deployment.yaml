@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: micro1
+  labels:
+    app: micro1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: micro1
+  template:
+    metadata:
+      labels:
+        app: micro1
+    spec:
+      containers:
+        - name: micro1
+          image: aklilu13/micro1:latest
+          ports:
+            - containerPort: 8081
+          env:
+            - name: PORT
+              value: "8081"

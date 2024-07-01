@@ -1,0 +1,25 @@
+namespace: micros-krakend-test
+resources:
+  - ../../base
+images:
+  - name: aklilu13/micro1
+    newTag: test
+  - name: aklilu13/micro2
+    newTag: test
+  - name: aklilu13/micro3
+    newTag: test
+  - name: aklilu13/micro4
+    newTag: test
+configMapGenerator:
+  - name: micro1-config
+    literals:
+      - PORT=8081
+  - name: micro2-config
+    literals:
+      - PORT=8082
+  - name: micro3-config
+    literals:
+      - PORT=8083
+  - name: micro4-config
+    literals:
+      - PORT=8084

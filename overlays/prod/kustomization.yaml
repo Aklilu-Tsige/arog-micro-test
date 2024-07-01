@@ -1,0 +1,25 @@
+namespace: micros-krakend-prod
+resources:
+  - ../../base
+images:
+  - name: aklilu13/micro1
+    newTag: prod
+  - name: aklilu13/micro2
+    newTag: prod
+  - name: aklilu13/micro3
+    newTag: prod
+  - name: aklilu13/micro4
+    newTag: prod
+configMapGenerator:
+  - name: micro1-config
+    literals:
+      - PORT=8081
+  - name: micro2-config
+    literals:
+      - PORT=8082
+  - name: micro3-config
+    literals:
+      - PORT=8083
+  - name: micro4-config
+    literals:
+      - PORT=8084
