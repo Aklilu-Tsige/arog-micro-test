@@ -1,6 +1,7 @@
 namespace: micros-krakend-staging
 resources:
   - ../../base
+  - krakend-ingress.yaml
 images:
   - name: aklilu13/micro1
     newName: aklilu13/micro1
