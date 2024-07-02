@@ -7,3 +7,6 @@ resources:
   - micro3-service.yaml
   - micro4-deployment.yaml
   - micro4-service.yaml
+  - krakend-deployment.yaml
+  - krakend-service.yaml
+  - krakend-configmap.yaml
