@@ -8,7 +8,7 @@ data:
       "version": 3,
       "timeout": "3000ms",
       "cache_ttl": "300s",
-      "name": "KrakenD",
+      "name": "Krakend",
       "endpoints": [
         {
           "endpoint": "/micro1/api/userAccounts",
