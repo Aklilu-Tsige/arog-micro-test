@@ -4,7 +4,9 @@ metadata:
   name: krakend-ingress
   namespace: micros-krakend-staging
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"  # Optional: if using Cert-Manager for TLS
+    kubernetes.io/ingress.class: "nginx"  # Ensure thi
 spec:
   rules:
     - host: krakend.ethiopiandemena.com

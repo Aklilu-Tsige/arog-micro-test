@@ -21,7 +21,7 @@ spec:
             - containerPort: 8080
           volumeMounts:
             - name: krakend-config
-              mountPath: /etc/krakend
+              mountPath: /etc/krakend/krakend.json
               subPath: krakend.json
       volumes:
         - name: krakend-config
