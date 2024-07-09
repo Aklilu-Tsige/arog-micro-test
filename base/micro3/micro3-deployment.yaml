@@ -18,7 +18,7 @@ spec:
         - name: micro3
           image: aklilu13/micro3:latest
           ports:
-            - containerPort: 8081
+            - containerPort: 8083
           env:
             - name: PORT
-              value: "8081"
+              value: "8083"
