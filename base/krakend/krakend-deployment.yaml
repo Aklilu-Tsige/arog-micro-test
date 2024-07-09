@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: krakend
-          image: aklilu13/krakend:1.0.1
+          image: aklilu13/krakend:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Never
